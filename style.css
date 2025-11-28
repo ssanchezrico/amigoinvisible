@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo navideño suave */
+.xmas-bg {
+    background: url('8869.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.90);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #b30000;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 15px;
+    color: #444;
+    margin-top: -10px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border-radius: 10px;
+    border: 1px solid #c33;
+    font-size: 16px;
+    background: #fff8f8;
+}
+
+.btn-main {
+    width: 100%;
+    padding: 15px;
+    background: #d62828;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-main:hover {
+    background: #b71c1c;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.copyBtn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.copyBtn:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.big-name {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px 0;
+    color: #b30000;
+}
