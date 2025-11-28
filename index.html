@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <title>Amigo Invisible 🎄</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("q7bcjwOcZk30rOy0Z");
+    </script>
 </head>
 <body class="xmas-bg">
 <div class="container card">
     <h1>🎁 Amigo Invisible 🎄</h1>
 
-    <p class="subtitle">Organiza tu sorteo navideño fácilmente</p>
+    <p class="subtitle">Organiza tu sorteo navideño y envía los enlaces por correo automáticamente</p>
 
-    <label>Participantes (uno por línea):</label>
-    <textarea id="names" placeholder="Sergio&#10;Mariola&#10;Emma&#10;Juan"></textarea>
+    <label>Participantes (uno por línea, formato: Nombre;correo):</label>
+    <textarea id="names" placeholder="Sergio;sergio@example.com
+Emma;emma@example.com"></textarea>
 
     <label>Presupuesto máximo (€):</label>
     <input type="number" id="budget" min="1" placeholder="20">
@@ -21,6 +28,7 @@
 
     <div id="results" class="hidden">
         <h2>🔗 Enlaces privados</h2>
+        <p class="hint">Puedes copiarlos o enviarlos directamente por correo.</p>
         <table id="linksTable"></table>
     </div>
 </div>
